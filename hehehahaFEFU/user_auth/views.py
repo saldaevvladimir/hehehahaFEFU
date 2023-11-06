@@ -7,15 +7,15 @@ def auth_page(request):
         log = request.POST['login']
         passw = request.POST['password']
 
-        users =  User.objects.filter(login=log)
+        user =  User.objects.filter(login=log)
         user_id = None
         
-        if not users.exists():
+        if not user.exists():
             new_user = User(login=log, password=passw)
             new_user.save()
             user_id = new_user.id
         else:
-            user_id = users[0].id
+            user_id = user[0].id
 
         return redirect('home/')
     
