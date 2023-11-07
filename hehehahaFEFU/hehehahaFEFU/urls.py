@@ -22,5 +22,5 @@ from main.views import main_page
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', auth_page, name='auth'),
-    path('home/', main_page)
+    path('home/', main_page, name='main')
 ]

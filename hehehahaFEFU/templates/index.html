@@ -17,14 +17,15 @@
                 </div>
             </div>
         </div>
-        <form action="#">
+    <form action="{% url 'main' %}" method="POST">
+        {% csrf_token %}
         <div class="row">
-            <input type="text" placeholder="Прозвище на игру" required>
+            <input type="text" placeholder="Прозвище на игру" name="alias" required>
         </div>
         <div class="row button">
-            <input type="submit" id="create" value="CREATE GYM">
-            <input type="submit" id="random" value="RANDOM GYM">
-            <input type="submit" id="private" value="PRIVATE GYM">
+            <input type="submit" name="action" id="create" value="CREATE GYM">
+            <input type="submit" name="action" id="random" value="RANDOM GYM">
+            <input type="submit" name="action" id="private" value="PRIVATE GYM">
         </div>
     </form>
     </div>

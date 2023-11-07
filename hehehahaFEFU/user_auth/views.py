@@ -20,3 +20,5 @@ def auth_page(request):
         return redirect('home/')
     
     return render(request, 'auth.html')
+
+
