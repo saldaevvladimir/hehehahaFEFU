@@ -15,6 +15,8 @@ def auth_page(request):
             new_user.save()
             user_id = new_user.id
         else:
+            if user[0].password != passw:
+                return render(request, 'auth.html', context={'error_message': 'погоняло уже занято'})
             user_id = user[0].id
 
         return redirect('home/')
