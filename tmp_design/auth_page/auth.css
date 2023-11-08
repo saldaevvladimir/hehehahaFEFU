@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+	background: #2083fddb;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	left: 50%;
+	position: absolute;
+	width: 360px;
+	height: 250px;
+	background: #ecf0f1;
+	padding: 40px;
+	top: 50%;
+    transform: translate(-50%, -50%);
+	-webkit-border-radius: 20px 0 20px 0;
+	-moz-border-radius: 20px 0 20px 0;
+	border-radius: 20px 0 20px 0;
+	text-align: center;
+}
+
+h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 10px;
+	color: #484848;
+	text-shadow: 1px 1px 0px white;
+}
+
+input {
+	display: block;
+	width: 315px;
+	padding: 14px;
+	border-radius: 6px;
+	border: 0;
+	margin-bottom: 12px;
+	color: #7f8c8d;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+input:focus {
+	background: #fafafa;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: #7f8c8d;
+	font-weight: 400;
+	text-shadow: 1px 1px 0px white;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.button {
+	margin-top: 10px;
+	background: #3498db;
+	color: #fff;
+	font-weight: 400;
+	text-shadow: 1px 1px 0px #2d7baf;
+	box-shadow: 0px 3px 0px #2d7baf;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.note1 {
+	font-size: 14px;
+	color: #737373;
+	font-weight: 250;
+}
+
+.note2 {
+	font-size: 14px;
+	color: #737373;
+	font-weight: 250;
+	margin-bottom: 10px;
+}
+
+#home {
+	clip-path: url(#cache);
+  }
+  
+  #red {
+	fill: none;
+	opacity: 0.5;
+	stroke: #78b4fd;
+	stroke-width: 12;
+	stroke-miterlimit:10;
+	animation: show 4s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out; 
+  }
+  
+  #white {
+	fill: none;
+	opacity: 0.75;
+	stroke: #ffffff;
+	stroke-width: 12;
+	stroke-miterlimit:10;
+	animation: show 4s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+  }
+  
+  #dark-blue {
+	fill: none;
+	opacity: 0.75;
+	stroke: #ffffff;
+	stroke-width: 6;
+	stroke-miterlimit:10;
+	stroke-dasharray: 200;
+	stroke-dashoffset: 800;
+	animation: draw 4s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;    
+  }
+  
+  @keyframes draw {
+	to {
+	  stroke-dashoffset: 0;
+   }
+	  }
+  
+  @keyframes show {
+	0% {
+	  opacity: 0.15;
+   }
+	50% {
+	  opacity: 0.2;
+   }
+	100% {
+	  opacity: 0.15;
+   }
+	  }
