@@ -1,0 +1,7 @@
+body {
+    background: repeating-linear-gradient(60deg, #2081fc, #409afa 50px, #71b0fd 50px,  #4c9dfd 100px) fixed;
+    backdrop-filter: blur(30px);
+    scrollbar-width: none;
+    overflow: hidden;
+}
+

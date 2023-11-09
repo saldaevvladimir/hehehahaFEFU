@@ -1,0 +1,15 @@
+body {
+    background: repeating-radial-gradient(circle at 50% 50%,
+        #7db5fb, #539dfb 4%, #1f82fd 4%, #4898fb 8%),
+                    url(https://goo.gl/Aw4YRB) no-repeat 50% 50%;
+    background-blend-mode: saturation;
+    background-repeat: no-repeat;
+    width: 102%;
+    height: 100%;
+    scrollbar-width: none;
+    overflow: hidden;
+    object-fit: cover;
+    backdrop-filter: blur(1px);
+}
+
+  
