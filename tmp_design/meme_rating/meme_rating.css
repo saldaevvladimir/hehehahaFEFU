@@ -1,0 +1,105 @@
+body {
+    background: repeating-linear-gradient(60deg, #2081fc, #409afa 70px, #71b0fd 70px, #4c9dfd 140px) fixed;
+    scrollbar-width: none;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: absolute;
+    width: 90%;
+    height: 97.5vh;
+    margin: 1.25vh 5%;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper .img-area {
+    height: 100%;
+    width: 45%;
+    z-index: 1;
+}
+
+.wrapper .img-area img {
+    border: 6px solid #052777;
+    border-radius: 20px;
+    height: 70%;
+    width: 90%;
+    object-fit: fill;   
+}
+
+.wrapper .user-text {
+    height: 20%;
+    width: 85.25%;
+    background-color: white;
+    border: 6px solid #052777;
+    border-radius: 20px;
+    z-index: 1;
+    padding: 15px;
+    margin-top: 6px;
+    color: #092476;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-size: 16px; */
+    text-align: center;
+    overflow: hidden;
+}
+
+.desc-block {
+    margin-top: 2%;
+    display: block;
+    margin-left: 5%;
+    width: 50%;
+    z-index: 1;
+}
+
+.desc-block .task-note {
+    margin-left: 25px;
+    color: #092476;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 72px;
+    line-height: 1.0;
+    text-align: center;
+    letter-spacing: 10.0;
+}
+
+.rating-block {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.rate-btn {
+    height: 200px;
+    width: 200px;
+    border: 6px solid #052777;
+    border-radius: 100%;
+    object-fit: cover;
+    background-color: black;
+    margin: 0 30px;
+}
+
+
+.indicators {
+    height: 20%;
+    border: 1px solid greenyellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+    color: #032775;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+    margin-top: 7%;
+}
+
+.indicators .time-ind-label {
+    margin-left: none;
+}
+
+.indicators .users-count-ind-label {
+    margin-left: 50%;
+    transform: translate(-100%, 0%)
+}
+
