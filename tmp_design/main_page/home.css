@@ -1,0 +1,219 @@
+body {
+    background: repeating-radial-gradient(circle at 45% 46%,
+            #7db5fb, #539dfb 4%, #1f82fd 4%, #4898fb 8%),
+        url(https://goo.gl/Aw4YRB) no-repeat 50% 50%;
+    background-blend-mode: saturation;
+    background-repeat: no-repeat;
+    width: 102%;
+    height: 100%;
+    scrollbar-width: none;
+    overflow: hidden;
+    backdrop-filter: blur(1px);
+    z-index: 0;
+}
+
+.logo_img {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-56%, -52%);
+    z-index: 1;
+    border: 6px solid #052777;
+    overflow: hidden;
+}
+
+.logo_img img {
+    width: 400px;
+    height: 400px;
+    transition: all 0.5s ease;
+}
+
+.logo_img img:hover {
+    transform: rotate(360deg);
+}
+
+.title {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+}
+
+.title .hehehaha {
+    color: #020000;
+    font-size: 82px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+}
+
+@keyframes rotate-text {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.animated {
+  animation: rotate-text 1s ease;
+}
+
+
+.title .FEFU {
+    color: #052572;
+    font-size: 156px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    left: 2%;
+    margin-top: -10%;
+}
+
+
+
+.stats {
+    position: absolute;
+    left: 93%;
+    top: 5%;
+    transform: translate(-100%, 0%);
+    height: 31.5%;
+    width: 20.2%;
+    background-color: aliceblue;
+    border: 6px solid #052777;
+    border-radius: 40px;
+    z-index: 1;
+}
+
+.stats .stats-title {
+    color: black;
+    margin-top: 20px;
+    font-size: 36px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.stats .h-line {
+    margin: 20px 20px;
+    margin-top: 10px;
+    padding: 0;
+    height: 6px;
+    border: none;
+    box-sizing: border-box;
+    background-position: 50%;
+    color: rgb(0, 187, 255);
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3px" height="3px" viewBox="0 0 3 3" fill="rgb(5, 39, 119"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
+    background-size: 6px 6px;
+}
+
+.point {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-top: 7.5%;
+}
+
+.stats .point_name {
+    text-align: left;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 175%;
+}
+
+.stats .point_value {
+    margin-left: 20%;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Regular', sans-serif;
+    font-size: 175%;
+}
+
+.form-username {
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-56%, -50%);
+    z-index: 1;
+    width: 35%;
+    height: 9%;
+    border: 6px solid #052777;
+    border-radius: 35px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 46px;
+}
+
+.btn_block {
+    position: absolute;
+    left: 93%;
+    top: 50%;
+    transform: translate(-100%, 0%);
+    height: 27.8%;
+    width: 20.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-random {
+    z-index: 1;
+    width: 97%;
+    height: 22.6%;
+    border: 3px solid #052777;
+    border-radius: 35px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+    background-color: #032775;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.form-private {
+    z-index: 1;
+    width: 97%;
+    height: 22.6%;
+    border: 3px solid #00cb4d;
+    border-radius: 35px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #00cb4d;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.form-create {
+    z-index: 1;
+    width: 97%;
+    height: 22.6%;
+    border: 3px solid #e27d60;
+    border-radius: 35px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+    background-color: #e27d60;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+input {
+    outline: none;
+}
+
+.form-random:hover {
+    background: rgb(255, 255, 255);
+	color: #032775;
+	box-shadow: inset 0 0 0 3px #032775;
+}
+
+.form-private:hover {
+    background-color: rgb(255, 255, 255);
+    color:#00cb4d;
+    box-shadow: inset 0 0 0 3px #00cb4d;
+}
+
+.form-create:hover {
+    background-color: rgb(255, 255, 255);
+    color:#e27d60;
+    box-shadow: inset 0 0 0 3px #e27d60;
+}
