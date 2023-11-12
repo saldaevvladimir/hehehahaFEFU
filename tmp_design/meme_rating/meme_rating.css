@@ -82,7 +82,6 @@ body {
 
 .indicators {
     height: 20%;
-    border: 1px solid greenyellow;
     display: flex;
     flex-direction: row;
     align-items: center;
