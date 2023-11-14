@@ -31,8 +31,23 @@
         <div class="btn_block">
             <input type="submit" placeholder="btn1" class="form-random" value="Случайное лобби" readonly onfocus="this.removeAttribute('readonly')">
             <input type="submit" placeholder="btn2" class="form-private" value="Приватное лобби" readonly onfocus="this.removeAttribute('readonly')">
-            <input type="submit" placeholder="btn1" class="form-create" value="Создать лобби" readonly onfocus="this.removeAttribute('readonly')">
+            <!-- <input type="submit" placeholder="btn1" class="form-create" value="Создать лобби" readonly onfocus="this.removeAttribute('readonly')"> -->
+            <button class="form-create" onclick="openPopup()">Создать лобби</button>
+            <div id="popup">
+                <div class="popup-title">Новое лобби</div>
+                <form action="#" method="POST">
+                    <input type="text" placeholder="название лобби">
+                    <input type="number" placeholder="кол-во игроков">
+                    <input type="checkbox" placeholder="приватное лобби">
+                    <input type="number" placeholder="длительность раунда(сек.)">
+                    <input type="submit" class="popup-submit">
+                    <a href="#" onClick="closePopup()">
+                        <img src="close-btn.svg" class="popup-close" name="send" />
+                    </a>
+                </form>
+            </div>
         </div>
     </form>
+    <script src="home.js"></script>
 </body>
 </html>

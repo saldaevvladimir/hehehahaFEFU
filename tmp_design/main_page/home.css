@@ -150,6 +150,7 @@ body {
     background-color: #032775;
     color: white;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .form-private {
@@ -166,6 +167,7 @@ body {
     background-color: #00cb4d;
     color: white;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .form-create {
@@ -180,6 +182,7 @@ body {
     background-color: #e27d60;
     color: white;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 input {
@@ -202,4 +205,45 @@ input {
     background-color: rgb(255, 255, 255);
     color:#e27d60;
     box-shadow: inset 0 0 0 3px #e27d60;
+}
+
+#popup {
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 6px solid #052777;
+    border-radius: 40px;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#popup.open {
+    transition: opacity .5s;
+    opacity: 1;
+    z-index: 2;
+}
+
+#popup.close {
+    opacity: 0;
+    transition: opacity .5s;
+    z-index: 0;
+}
+
+.popup-title {
+    color: black;
+    margin-top: 20px;
+    font-size: 36px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.popup-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
 }
