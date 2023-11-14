@@ -13,3 +13,11 @@ function closePopup() {
 		popup.classList.remove('close');
 	}, { once: true });
 }
+
+let btn = document.getElementById('popup-submit');
+
+btn.addEventListener("click", active);
+
+function active() {
+	btn.classList.toggle("is_active");
+}
