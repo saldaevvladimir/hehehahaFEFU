@@ -6,6 +6,7 @@
 
 body {
 	background: #2083fddb;
+	overflow: hidden;
 }
 
 .container {
@@ -20,7 +21,7 @@ body {
 	background: #ecf0f1;
 	padding: 40px;
 	top: 50%;
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	-webkit-border-radius: 20px 0 20px 0;
 	-moz-border-radius: 20px 0 20px 0;
 	border-radius: 20px 0 20px 0;
@@ -90,60 +91,62 @@ a:visited {
 
 #home {
 	clip-path: url(#cache);
-  }
-  
-  #red {
+}
+
+#red {
 	fill: none;
 	opacity: 0.5;
 	stroke: #78b4fd;
 	stroke-width: 12;
-	stroke-miterlimit:10;
-	animation: show 4s;
-	animation-fill-mode: forwards;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out; 
-  }
-  
-  #white {
-	fill: none;
-	opacity: 0.75;
-	stroke: #ffffff;
-	stroke-width: 12;
-	stroke-miterlimit:10;
+	stroke-miterlimit: 10;
 	animation: show 4s;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
-  }
-  
-  #dark-blue {
+}
+
+#white {
+	fill: none;
+	opacity: 0.75;
+	stroke: #ffffff;
+	stroke-width: 12;
+	stroke-miterlimit: 10;
+	animation: show 4s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#dark-blue {
 	fill: none;
 	opacity: 0.75;
 	stroke: #ffffff;
 	stroke-width: 6;
-	stroke-miterlimit:10;
+	stroke-miterlimit: 10;
 	stroke-dasharray: 200;
 	stroke-dashoffset: 800;
 	animation: draw 4s;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;    
-  }
-  
-  @keyframes draw {
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes draw {
 	to {
-	  stroke-dashoffset: 0;
-   }
-	  }
-  
-  @keyframes show {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes show {
 	0% {
-	  opacity: 0.15;
-   }
+		opacity: 0.15;
+	}
+
 	50% {
-	  opacity: 0.2;
-   }
+		opacity: 0.2;
+	}
+
 	100% {
-	  opacity: 0.15;
-   }
-	  }
+		opacity: 0.15;
+	}
+}
