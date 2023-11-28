@@ -1,0 +1,68 @@
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хи Хи Ха Ха FEFU</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class="title">
+        <div class="hehehaha">ХИ‐ХИ‐ХА‐ХА</div>
+        <div class="fefu">FEFU</div>
+    </div>
+    <div class="logo_img">
+        <img src="../static/img/kaifbreaker.jpg" alt="">
+    </div>
+    <a class="logout" href="{% url 'logout' %}">Покинуть клуб</a>
+    <div class="stats">
+        <div class="stats-title">Статистика {{ user.username }}</div>
+        <hr class="h-line">
+        <div class="point">
+            <div class="point_name">Игры:</div><div class="point_value">{{ user.userdata.games }}</div>
+        </div>
+        <div class="point">
+            <div class="point_name">Очки:</div><div class="point_value">{{ user.userdata.score }}</div>
+        </div>
+        <div class="point">
+            <div class="point_name">Топ 1:</div><div class="point_value">{{ user.userdata.first_places }}</div>
+        </div>
+    </div>
+    <form action="#">
+        <input type="text" placeholder="Kaifbreaker1337" class="form-username">
+        <div class="btn_block">
+            <input type="submit" placeholder="btn1" class="form-random" value="Случайное лобби" readonly onfocus="this.removeAttribute('readonly')">
+            <input type="submit" placeholder="btn2" class="form-private" value="Приватное лобби" readonly onfocus="this.removeAttribute('readonly')">
+            <button class="form-create" onclick="openPopup()">Создать лобби</button>
+            <div id="popup">
+                <div class="popup-title">Новое лобби</div>
+                <form action="#" method="POST">
+                    <input type="text" placeholder="название" class="popup-input">
+                    <input type="number" min="3" max="10" placeholder="кол-во игроков" class="popup-input">
+                    <input type="number" min="30" max="120" step="15" placeholder="длительность раунда(сек)" class="popup-input">
+                    <label class="popup-input input-checkbox-label">
+                        приватное лобби
+                        <input type="checkbox" value="приватное лобби" class="popup-input">
+                    </label>
+                    <button id="popup-submit" class="popup-submit">
+                        <span>Создать</span>
+                        <div class="success">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 29.756 29.756"
+                                style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
+                                <path d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <a href="#" onClick="closePopup()">
+                        <img src="../static/img/close-btn.svg" class="popup-close" name="send" />
+                    </a>
+                </form>
+            </div>
+        </div>
+    </form>
+    <script src="{% static 'js/home.js' %}"></script>
+</body>
+</html>
+
+
+
